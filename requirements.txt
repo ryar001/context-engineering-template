@@ -1,0 +1,8 @@
+pydantic
+pydantic-settings
+websocket-client
+python-binance
+pandas
+pandas_ta
+requests
+google-generativeai
