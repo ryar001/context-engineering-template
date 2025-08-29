@@ -227,6 +227,14 @@ CREATE trading/symbol_info_manager.py:
     4.  Replace or augment the existing `TradingStrategy` with the LLM's signal generation.
     5.  Add robust error handling and fallback mechanisms in case the LLM provides ambiguous or invalid signals.
 
+### LLM-driven Query Agent
+- **Goal**: Enhance the `QueryAgent` to understand and respond to natural language queries using an LLM.
+- **Approach**:
+    1.  Integrate an LLM into the `QueryAgent` to interpret user questions.
+    2.  Enable the LLM to intelligently select and utilize the available tools (e.g., `get_account_balance`, `get_open_orders`) based on the user's query.
+    3.  Format the LLM's responses to be user-friendly and informative.
+    4.  Implement error handling for cases where the LLM cannot fulfill a request or misinterprets a query.
+
 ## Validation Loop
 
 ### Level 1: Syntax & Style

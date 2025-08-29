@@ -42,11 +42,13 @@
 - CREATE tests/:
   - Write unit tests for the strategy, risk manager, and data handler.
   - Mock the Binance API calls and WebSocket messages.
+  - Added `test_query_agent.py` to test the QueryAgent, including LLM integration.
 
 ### Task 9: Create Query Agent and Chat Interface - COMPLETED
 - CREATE agents/query_agent.py:
   - This agent will be responsible for handling user queries.
   - It will have tools that call the functions in `trading/trader.py` to get account information.
+  - **LLM Integration**: Enhanced to use Google Gemini for natural language understanding and response generation for queries not directly handled by specific tools.
 - MODIFY main.py:
   - Implement the `chat` subcommand to start a chat loop with the `QueryAgent`.
 
